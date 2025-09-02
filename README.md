@@ -26,6 +26,7 @@ The database will be structured around several key entities to manage the platfo
 ### Fields: user_id, username, email, password_hash, full_name.
 ### Properties: Contains details about the listings available for rent.
 ### Fields: property_id, owner_id (foreign key to Users), title, description, price_per_night.
+
 A User can have multiple Properties.
 ### Bookings: Stores information about reservations made by users.
 ### Fields: booking_id, user_id (foreign key to Users), property_id (foreign key to Properties), start_date, end_date.
@@ -41,4 +42,13 @@ The application will include the following core features to provide a complete u
 ### Property Management: Allows property owners to list, edit, and manage their properties. This includes uploading photos, setting prices, and describing amenities, which is essential for attracting renters.
 ### Booking System: Enables users to search for properties, check availability, and make reservations. This is the core business logic of the application, directly facilitating transactions between renters and owners.
 
+## API Security
+Securing the backend API is crucial to protect user data and ensure trustworthy transactions. The following key security measures will be implemented:
+### Authentication: We will use token-based authentication (e.g., JWT) to verify that only registered users can access protected endpoints. This is critical for protecting all user-specific data.
+### Authorization: Role-based access control will be implemented to ensure users can only perform actions they are permitted to do. For example, a user can only edit their own properties, not someone else's.
+### Rate Limiting: To prevent abuse and denial-of-service attacks, we will limit the number of requests a user can make to the API in a given period.
 
+## CI/CD Pipeline
+A CI/CD (Continuous Integration/Continuous Deployment) pipeline will be established to automate the development and deployment process, boosting efficiency and minimizing errors.
+CI/CD pipelines are important because they automatically build and test code changes, allowing developers to detect bugs early and deploy updates faster and more reliably. For this project, we will use 
+GitHub Actions to run automated tests whenever new code is pushed and Docker to containerize the application for consistent deployments.
