@@ -1,26 +1,18 @@
-# airbnb-clone-project
-Discovery/PoC
-A proof of concept (PoC) is a small-scale project that helps you test the feasibility of your software idea without committing to a full-blown development. PoC is not a market-ready product.
+* Airbnb Clone Project
+This repository contains the project blueprint for a comprehensive, real-world Airbnb clone. The primary goal is to design and document the backend systems, database structure, API, and security for a robust booking platform. This project focuses on planning a scalable web application before implementation.
 
-Up to 5 specialists
+The tech stack for this project includes Django, MySQL, GraphQL, Docker, and GitHub Actions.
 
-Product owner (usually on the client’s side), project manager, business analyst, UI/UX designer, and at least one software developer, depending on the complexity of a PoC.
+* Team Roles
+Based on the project overview and insights from the ITRexGroup blog, the team roles are as follows:
 
-MVP development
-A minimum viable product (MVP) is an early product version that is limited to the core features and functionality. You can release MVP to the market and elicit user feedback to improve your offering.
+Backend Developer: Responsible for building the server-side logic, developing the RESTful APIs using Django, and ensuring the application performs well.
 
-6+ specialists
+Database Administrator: Manages the MySQL database, including designing the schema, ensuring data integrity, and optimizing queries for performance.
 
-Product owner (usually on the client’s side), project manager, business analyst, UI/UX designer, software engineers, test engineers
+DevOps Engineer: Oversees the CI/CD pipeline using GitHub Actions and Docker, automating the build, testing, and deployment processes to ensure smooth and efficient releases.
 
-Product development
-A full-blown product with all its intended features and functionality
 
-Agile: usually up to nine specialists; if a project is large-scale, several Agile teams may work together.
+Security Specialist: Focuses on implementing and documenting API security measures, protecting user data, and securing payment transactions.
 
-Waterfall: no team size limit; the specific headcount will depend on the type and complexity of an application
-
-Product owner (usually on the client’s side), project manager, business analyst, UI/UX designer, software architect, software engineers, test engineers.
-
-Optionally: test automation engineers, performance engineers, DevOps engineers, security engineers
 
